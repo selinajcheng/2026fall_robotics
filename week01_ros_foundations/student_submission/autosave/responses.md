@@ -1,0 +1,106 @@
+# Week 1: Discovering a Robot Through ROS 2
+
+## Student
+
+- Name: Selina Cheng
+- Email: selina.cheng72@login.cuny.edu
+
+## final.architecture_evidence
+
+For a genuinely hybrid system, we would need to add something like a planner, goal, or map.
+
+## final.course_reflection
+
+This activity made me really realize how much complexity lies even in the just the first half of robotics: the software. It's a lot. I was on a robotics team in high school but had never touched ROS before (as far as I'm aware), so this was interesting to learn about. This lab made me also realize how connected robotics is to safety. It's practically intertwined if we want to use it for real-world contexts that interact in any way with humans as opposed to isolated and contained environments with specialized tasks. Robotics is likely most useful anyway in contexts where they interact with humans and there can be a lot of good that comes out of it, but the layer of safety that needs to be accounted for exists at the very beginning in the software. The software the hardware runs has to be unerringly accurate before deployment and that itself has already been demonstrated to be difficult through this lab.
+
+## final.hardware_next
+
+Before using the behavior on hardware, some of the things I'd test include stopping distance, different surfaces, and emergency stopping in a controlled environment.
+
+## final.middleware_debugging
+
+The ROS graph would help me diagnose a command that never reaches the robot because I can trace the steps the command followed until it stopped (wherever a subscriber or publisher is missing).
+
+## final.system_synthesis
+
+Robotics software is difficult because it's made up of many imperfect systems that have to work together. Throughout this lab,  I learned that robotics software has to communicate across multiple ROS nodes and topics. I also found out through running simulations that the actual physical motion may differ from the commanded version. Mission 2 specifically showed me this very clearly. In the real world and simulated physics environments, this is reflected in the actual motion recorded. Related to this, commands and responses take time. Sensors can also return invalid or missing data, adding additional difficulty. All of these factors add to the difficulty of robotics software.
+
+I implemented a reactive architecture because the current LiDAR readings directly impact the robot's current actions. For example, if an obstacle is detected, the robot stops. The advantages of this architecture are that it's simple, intuitive, fast, and easy to test. However, it's limited by its simplicity as it can only move and stop and lacks any memory, goal planning, map, etc.
+
+Gazebo simulated LiDAR. /ros_gz_bridge translates the LiDAR readings into ROS 2 messages published on /scan. The /obstacle_guard node subscribes to /scan, uses the two functions I implemented to choose a speed, and publishes the proposed command on /student_cmd_vel. /course_cmd_vel_guard subscribes to that topic, checks the command, and if the command is approved, publishes it on /cmd_vel. The /ros_gz_bridge then subscribes to /cmd_vel and executes the command into movement.
+
+Timing or invalid data affected safety because they both affect the robot's ability to judge and make decisions that are safe. Invalid or missing data invalidates the robot's ability to make accurate decisions as the data it operates on is false or non-existent. If sensor readings are false, no matter how accurate the robot is on correct input, it won't output an accurate decision. Hence, safeguards have to be implemented to treat missing or invalid data as data that the robot is unable to act on.
+
+/course_cmd_vel_guard is the layer that restricts unsafe motion. The guard limits or rejects the command before execution. This allows for another layer of ensuring safety. An example of this is capping the speed.
+
+## final.timing_evidence
+
+The stale 0.0 m/s reading most affected my understanding of robot safety because it showed me that a robot has to stop when the current sensor information can't be trusted.
+
+## mission_1.command_path_explanation
+
+A proposed command travels on /student_cmd_vel. The /course_cmd_vel_guard node safety checks the command. Then it publishes the approved command on /cmd_vel and is sent to the simulator.
+
+## mission_1.graph_explanation
+
+A ROS 2 graph is a map of the current programs running and how they exchange messages. From this mission, the /ros_gz_bridge publishes LiDAR readings on /scan.
+
+## mission_1.guided_checks
+
+{'node_list': True, 'guard_info': True, 'bridge_info': True, 'scan_info': True, 'scan_message': True, 'command_topics': True}
+
+## mission_1.scan_observation
+
+I found a list of many exact number measurements, which represents the distances between the robot and objects around it.
+
+## mission_1.tools_explanation
+
+Gazebo is a robot simulator while RViz is data viewer for ROS 2. The second is used to display information while the first simulates physics.
+
+## mission_2.measurement_explanation
+
+We'll look at the original/first curved trial. The estimated travel path was 0.394 m while the start-to-end distance was 0.376. The two describe different measurements because the estimated travel path is the curve as measured by odometry while the latter measures the distance from the starting to the end point, a straight line. Hence the latter is always shorter than the former.
+
+## mission_2.modified_settings
+
+{'linear_x': 0.22, 'angular_z': 0.1, 'duration': 4.0}
+
+## mission_2.motion_comparison
+
+The Straight live simulation trial was a surprise to me. I had predicted the robot would move forward exactly 0.45 m with 0.15 m/s forward speed in 3 seconds, but I had forgotten that there's factors like friction, delay, etc. in the real world. So it came to me as a surprise when I saw the actual start to end distance was 0.315 m, which felt much less than I'd expected. 
+
+## mission_2.prediction_locks
+
+{'straight': '2026-09-14T02:09:29.849151+00:00', 'rotation': '2026-09-14T02:12:18.375616+00:00', 'curve': '2026-09-14T02:14:17.294028+00:00', 'curve_modified': '2026-09-14T02:16:13.420578+00:00'}
+
+## mission_2.predictions
+
+{'straight': 'I predict the robot will finish 0.45 meters forward from its starting point.', 'rotation': 'I predict its position will not change while its direction will change by a little lower than 1.5 radians to the left.', 'curve': "I predict a short curved path forward and towards the right because the turning speed is higher than the foward speed, making the vertical distance traveled less than it would've been (without turning).", 'curve_modified': 'This curve should be wider and turn the other way because the forward speed is greater than the turning speed and the turning speed is positive, denoting a left turn.'}
+
+## mission_2.safety_explanation
+
+The command guards checks every driving command before it's executed for safety and validity. The final zero command exists as a marker for the end of a trial with zero forward and turning speed. The timeout is needed if a program crashes or no new commands are sent after 0.5 seconds.
+
+## mission_3.data_to_command
+
+My two functions turn a list of LiDAR distances into a move-or-stop command. front_distance() looks at the LiDAR distances, calculates which ones are valid forward distances and returns the closest valid distance. decide_velocity() compares the result from front_distance() with the stop distance and returns a velocity of 0.0 m/s when the obstacle is too close or data is missing but otherwise returns a capped forward speed.
+
+## mission_3.missing_data_safety
+
+The robot stops when there is no valid measurement because without a valid measurement of front distance, the robot can't know whether moving would cause collision, i.e., the path might not be clear, so it's safer to return 0.0 to avoid that.
+
+## mission_3.system_layers
+
+The obstacle_guard ROS node receives /scan. My functions are called and the proposed speed is published on /student_cmd_vel. The command_guard checks the proposed command and publishes the approved command on /cmd_vel, which is executed in the simulator.
+
+## part_1.activity
+
+{'sensor': {'normal': True, 'changed': True}, 'timing': {'normal': True, 'changed': True}, 'hardware': {'normal': True, 'changed': True}}
+
+## part_2.activity
+
+{'reactive': {'normal': True, 'changed': True}, 'behavior': {'normal': True, 'changed': True}, 'deliberative': {'normal': True, 'changed': True}, 'hybrid': {'normal': True, 'changed': True}, 'safety': {'normal': True, 'changed': True}}
+
+## part_3.activity
+
+{'middleware': {'single': True, 'multiple': True}, 'communication': {'topic': True, 'service': True}, 'failure': {'healthy': True, 'sensor': True, 'type': True, 'visualization': True}, 'inspection': {'nodes': True, 'node_info': True, 'topics': True, 'topic_info': True, 'echo': True, 'services': True, 'broken': True}}
