@@ -1,0 +1,19 @@
+{
+  "activityComplete": true,
+  "metrics": {
+    "posesHeld": 3,
+    "posesRequired": 3
+  },
+  "mission_id": "mission_1",
+  "params": {
+    "gravityCompensation": false,
+    "kd1": 3,
+    "kd2": 1.2,
+    "ki1": 0,
+    "ki2": 0.9,
+    "kp1": 16,
+    "kp2": 15.7
+  },
+  "saved_at": "2026-10-02T20:10:34",
+  "schema_version": 1
+}

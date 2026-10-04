@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-10-03T23:13:45",
+  "mission_id": "mission_2",
+  "student": {
+    "name": "Selina Cheng",
+    "student_id": "24418572",
+    "section": ""
+  },
+  "explanations": {
+    "prediction": "If the forward pod scale is too large, then it's going to be hard to be accurate. If the strafe pod scale is too small, it will take too long to get to the target strafe.",
+    "calibration_analysis": "My prediction that the forward scale; which is too large would mean going way off the mark in terms of accuracy. I tried this and found that a slightly lower than medium forward scale was best. I also predicted a too small strafe scale would take too long to get to the accurate answer, but I think in most times, you need just a moderate amount. The sideways pod is necessary to allow for side movement without continually turning to face the direction you want to shift to constantly. Some drift can still remain after calibration because this is a simulated environment modeled on reality."
+  },
+  "params": {
+    "forwardInPerTick": 0.0504,
+    "strafeInPerTick": 0.0503
+  },
+  "metrics": {
+    "max_error_in": 0.6238674782356077,
+    "final_error_in": 0.40488106698140963,
+    "passed": true
+  },
+  "result": {
+    "passed": true,
+    "maxError": 0.6238674782356077,
+    "finalError": 0.40488106698140963,
+    "params": {
+      "forwardInPerTick": 0.0504,
+      "strafeInPerTick": 0.0503
+    }
+  },
+  "csv_files": {},
+  "activity_gifs": [
+    "latest_odometry_test.gif"
+  ]
+}

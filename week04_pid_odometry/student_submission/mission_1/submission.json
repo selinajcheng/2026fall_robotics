@@ -1,0 +1,38 @@
+{
+  "schema_version": 2,
+  "created_at": "2026-10-02T22:47:07",
+  "mission_id": "mission_1",
+  "student": {
+    "name": "Selina Cheng",
+    "student_id": "24418572",
+    "section": ""
+  },
+  "explanations": {
+    "prediction": "With too little Kp, I expect there to slowness in reaching the target. With too little Kd, I expect there to be difficulty in precisely reaching the target because of there being not enough braking.",
+    "tuning_analysis": "When I started out, I started out by confirming my prediction by setting Kp and Kd as low as possible, which was 0.0. And then I found that it didn't work and it was way off for all of them. So I decided to experiment with one variable at a time, first increasing, going in the opposite direction for Kp and seeing there was some improvement and doing the same for Kd. Gravity compensation changed Kd even more, and actually all the variables. Ki made the effect of gravity worse, while Kp needed to be as high as possible to be able to counteract the force of gravity, and basically exert more force to combat any drag from gravity, and then Kd was needed to press the brakes a little bit more so that gravity would not result in the arm being dragged further down rather than staying upright. So it was a precision problem."
+  },
+  "params": {
+    "activity": "two_link_arm_pid_tuning",
+    "kp1": 16,
+    "ki1": 0,
+    "kd1": 3,
+    "kp2": 15.7,
+    "ki2": 0.9,
+    "kd2": 1.2,
+    "gravityCompensation": false
+  },
+  "metrics": {
+    "completed": true,
+    "posesHeld": 3,
+    "posesRequired": 3
+  },
+  "checkin": {
+    "note": "When I started out, I started out by confirming my prediction by setting Kp and Kd as low as possible, which was 0.0. And then I found that it didn't work and it was way off for all of them. So I decided to experiment with one variable at a time, first increasing, going in the opposite direction for Kp and seeing there was some improvement and doing the same for Kd. Gravity compensation changed Kd even more, and actually all the variables. Ki made the effect of gravity worse, while Kp needed to be as high as possible to be able to counteract the force of gravity, and basically exert more force to combat any drag from gravity, and then Kd was needed to press the brakes a little bit more so that gravity would not result in the arm being dragged further down rather than staying upright. So it was a precision problem.",
+    "choice": "",
+    "complete": true
+  },
+  "csv_files": {},
+  "activity_gifs": [
+    "latest_arm_tuning.gif"
+  ]
+}
