@@ -1,0 +1,7 @@
+# Final synthesis
+
+Mission 1 showed that, instead of the direct truth, sensors provide evidence that is imperfect. For example, at a target of 2.00 m, the quantized sensor produced a mean of 1.986 m, a -0.014 m bias, and 0.004307 m² variance. More samples would stabilize the mean, but they don't remove bias. 
+
+Mission 2 showed me that estimation inherently involves trade-offs that we have to make. Increasing the moving-average window from 3 to 11 raised the RMSE from 0.1395 m to 0.1601 m while keeping a response delay of 1.10 s. This showed me that smoothing didn't automatically make things better. I chose a median filter with window 3 and equal fusion weight because it gave the lowest RMSE with a relatively low delay, achieving balance between the noisier sensor A and biased sensor B but with more stable readings.
+
+Mission 3 connected those estimates to decisions regarding deployment. The final Warehouse policy had a 0.62% false safe rate, a 5.61% unnecessary stop rate, zero delay, and no dangerous command. The Assistive policy used a larger threshold and margin and instead abstained when there were missing readings. This produced zero false safe, unnecessary stop, delay, and dangerous command results.

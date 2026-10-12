@@ -1,0 +1,34 @@
+{
+  "files": {
+    "autosave/responses.json": "c4f7b9e9735c91d65664f6534bb49e2bf220d9319342b8a67c0582676f9ba987",
+    "autosave/responses.md": "650319d2d0f61b19aecdf3f213ccb7a1b812f39a53f8fc9835498147e7a1816e",
+    "final_reflection.md": "42ecd413427633e2dd5752f55aca6864476f823b56bcc0ba49730dfa5b7ceb71",
+    "final_synthesis.md": "d21bbde7460dedc94bcb71bc0da673663447e4a27efa2fa1af81cc1737160ca3",
+    "mission_1/evidence.png": "bc47f6d7ccad48e0830242da1a6c6b0bc89386a1605eca301f6d514cf6813919",
+    "mission_1/explanation.md": "5eedab21741e4ac08bb1e7ddfff4bcf9cd00b4606388ff16e615bbce9be1f64c",
+    "mission_1/measurements.csv": "5b6971d46e1b6685b380d4fac7a8f178bb8fb327b77fc12b46d857c147a77787",
+    "mission_1/submission.json": "def01aa89a8ed0373e46898c23477a7608de6c3d07e9158798f7f3f0f89dcfaf",
+    "mission_2/evidence.png": "5b547492a0d80608b95bb776927f30942a741b2533b23a69cd69236def856972",
+    "mission_2/explanation.md": "03db24197ab1e12926bfcc3e4a86e58ff19b2f208289cb5461cb0647091ed6a0",
+    "mission_2/measurements.csv": "fa36aa9a818c2cb3955c17f1c2e5314abf81d673e17fae4c7ff59313b9ea0170",
+    "mission_2/submission.json": "ad4144a79e645a804a748e7a573f0103e3f38cf1d66c69f98278cc3925bcbbf9",
+    "mission_3/explanation.md": "51663249af9a340999eda920dd36db24e9be852fdb38ea97062c5dd8758e6d72",
+    "mission_3/measurements.csv": "509e867fa90b5e9648905375323e2366a119e4dda4331818ebdc4354256ae524",
+    "mission_3/submission.json": "37c9d8777cdd2e6b0779dc0fe9fa8e965d4668e15f3c323b0395c64580d649bb",
+    "student.json": "c4ae4b20b08b0429e3f0d44309a5dd3c27a8e63ed5f092d36d76b5c23c64478f"
+  },
+  "generated_at": "2026-10-12T04:00:22.936596+00:00",
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_signatures": {
+    "mission_1": "8ce4029ed4afc860",
+    "mission_2": "b21b4d3612894e6b",
+    "mission_3": "d72140640a5cca31"
+  },
+  "response_signature": "b0edc5879978d511",
+  "schema_version": 2,
+  "student": {
+    "course_id": "CSCI 39536",
+    "email": "selina.cheng72@cuny.edu",
+    "name": "Selina Cheng"
+  }
+}
