@@ -1,0 +1,35 @@
+{
+  "files": {
+    "autosave/responses.json": "866bcb6ee3d5ccfd16f92fc58b74907e59fc4a80f13cd12e51ce720eb8febe46",
+    "autosave/responses.md": "a3b12194e54c7a952f009f915daea1ad88b96374158c534e2224bb6bd1bce42d",
+    "final_reflection.md": "b74c40ea43490d592cc007d3d9e97552fd3a46af47b6d5f7264642e8a8f5f289",
+    "final_synthesis.md": "ce07aa2e1f934c5f9163f8df200c15756926cdcd497aecb6316ff171b0f755e4",
+    "mission_1/analysis.json": "dc0db91fa31feb126bb1faa5d37698b970c2c9b994d0a6891c63fd223af11d7c",
+    "mission_1/evidence.json": "643ae372868c6180f456a5200bb2cf54b85f4ff0912e559eb3346701da73d6dd",
+    "mission_1/explanation.md": "46bcf2f41af25e77381312c5f4fcef35c2773ab5a6d13239a204e94afb1d5166",
+    "mission_1/map.pgm": "8d020af26ca4a70e543a7dc4934e409878712af094b909423673553cba1ac0db",
+    "mission_1/map.yaml": "5a2d7c8d9a517f187b922c2f78f747b3787b420c233cd660870d28ce95a5e7b8",
+    "mission_1/rviz_screenshot.png": "29883ee1e59fcf87ad78aaa8b3a104cf81f7906b46d2a74b2d62384915186561",
+    "mission_1/submission.json": "4cc059bc93f215da83d207226bdcc807992bce870018fbc718ffc80931782425",
+    "mission_2/analysis.json": "bc1505c12a2406b6c8f7ae2bc24e478061276d9c463ff917c8fff3068b9d3aa7",
+    "mission_2/evidence.json": "79fa6d27e6c03d9a0c2e94457800df7031f164e50a44941c8795135bf9f4aa21",
+    "mission_2/explanation.md": "1dbea30b32c94104ba1dbf9bda130eb115526bd57e6727ea10e7db04e55fe777",
+    "mission_2/map.pgm": "7269dcbf665ba8171e1e79a225e720ec88f54234a67ffb11a527abfc8546af5f",
+    "mission_2/map.yaml": "5abe5089804ac2dc76643b9ce571a3a1d017992c112de922073164929f8f3f9a",
+    "mission_2/rviz_screenshot.png": "5f7c1e6fa6362097988bfddad34e579426c6b4766ada3d96584fb67cf1d72e89",
+    "mission_2/submission.json": "304aa0c196300aa0dbd009d14b4ef8e7587b807f9f23370d47f634167f8fbc46",
+    "student.json": "e03f52f92e378b38d3dfc5ab31b6c4c155da27c758c86bc4c9e4bfc34ab0b1ca"
+  },
+  "generated_at": "2026-10-18T04:27:36.128806+00:00",
+  "lab_id": "week06_slam_localization",
+  "mission_signatures": {
+    "mission_1": "80804cb496208137",
+    "mission_2": "1cea9d7c54c0a4c7"
+  },
+  "response_signature": "a486d1372bb431b8",
+  "schema_version": 2,
+  "student": {
+    "email": "selina.cheng72@cuny.edu",
+    "name": "Selina Cheng"
+  }
+}

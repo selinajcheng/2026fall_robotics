@@ -1,0 +1,16 @@
+running develop
+running egg_info
+writing course_slam_tools.egg-info/PKG-INFO
+writing dependency_links to course_slam_tools.egg-info/dependency_links.txt
+writing entry points to course_slam_tools.egg-info/entry_points.txt
+writing requirements to course_slam_tools.egg-info/requires.txt
+writing top-level names to course_slam_tools.egg-info/top_level.txt
+reading manifest file 'course_slam_tools.egg-info/SOURCES.txt'
+writing manifest file 'course_slam_tools.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages/course-slam-tools.egg-link (link to .)
+Installing localization_recorder script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools
+Installing scan_degrader script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools
+
+Installed /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools
+running symlink_data

@@ -1,0 +1,65 @@
+[0.000000] (-) TimerEvent: {}
+[0.002019] (course_slam_tools) JobQueued: {'identifier': 'course_slam_tools', 'dependencies': OrderedDict()}
+[0.002113] (course_slam_tools) JobStarted: {'identifier': 'course_slam_tools'}
+[0.099245] (-) TimerEvent: {}
+[0.199876] (-) TimerEvent: {}
+[0.300554] (-) TimerEvent: {}
+[0.401145] (-) TimerEvent: {}
+[0.501648] (-) TimerEvent: {}
+[0.602243] (-) TimerEvent: {}
+[0.703186] (-) TimerEvent: {}
+[0.804170] (-) TimerEvent: {}
+[0.904767] (-) TimerEvent: {}
+[1.005462] (-) TimerEvent: {}
+[1.106071] (-) TimerEvent: {}
+[1.206727] (-) TimerEvent: {}
+[1.307265] (-) TimerEvent: {}
+[1.407832] (-) TimerEvent: {}
+[1.508284] (-) TimerEvent: {}
+[1.608913] (-) TimerEvent: {}
+[1.709686] (-) TimerEvent: {}
+[1.810481] (-) TimerEvent: {}
+[1.911139] (-) TimerEvent: {}
+[2.011776] (-) TimerEvent: {}
+[2.081908] (course_slam_tools) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/build', '--no-deps', 'symlink_data'], 'cwd': '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools', 'env': {'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'HOSTNAME': '89e4417eeaf5', 'SHLVL': '0', 'LIBGL_ALWAYS_SOFTWARE': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'COURSE_DESKTOP_SIZE': '1600x900x24', 'HOME': '/home/student', 'OLDPWD': '/workspace', 'PYTHONUNBUFFERED': '1', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'QT_X11_NO_MITSHM': '1', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/opt/course-venv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'DEBIAN_FRONTEND': 'noninteractive', 'GALLIUM_DRIVER': 'llvmpipe', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[2.112087] (-) TimerEvent: {}
+[2.212878] (-) TimerEvent: {}
+[2.313653] (-) TimerEvent: {}
+[2.414265] (-) TimerEvent: {}
+[2.514806] (-) TimerEvent: {}
+[2.615294] (-) TimerEvent: {}
+[2.658651] (course_slam_tools) StdoutLine: {'line': b'running develop\n'}
+[2.715530] (-) TimerEvent: {}
+[2.816141] (-) TimerEvent: {}
+[2.916768] (-) TimerEvent: {}
+[3.017841] (-) TimerEvent: {}
+[3.018770] (course_slam_tools) StdoutLine: {'line': b'running egg_info\n'}
+[3.019430] (course_slam_tools) StdoutLine: {'line': b'creating course_slam_tools.egg-info\n'}
+[3.054057] (course_slam_tools) StdoutLine: {'line': b'writing course_slam_tools.egg-info/PKG-INFO\n'}
+[3.054664] (course_slam_tools) StdoutLine: {'line': b'writing dependency_links to course_slam_tools.egg-info/dependency_links.txt\n'}
+[3.055078] (course_slam_tools) StdoutLine: {'line': b'writing entry points to course_slam_tools.egg-info/entry_points.txt\n'}
+[3.055262] (course_slam_tools) StdoutLine: {'line': b'writing requirements to course_slam_tools.egg-info/requires.txt\n'}
+[3.055638] (course_slam_tools) StdoutLine: {'line': b'writing top-level names to course_slam_tools.egg-info/top_level.txt\n'}
+[3.057409] (course_slam_tools) StdoutLine: {'line': b"writing manifest file 'course_slam_tools.egg-info/SOURCES.txt'\n"}
+[3.118159] (-) TimerEvent: {}
+[3.127953] (course_slam_tools) StdoutLine: {'line': b"reading manifest file 'course_slam_tools.egg-info/SOURCES.txt'\n"}
+[3.129447] (course_slam_tools) StdoutLine: {'line': b"writing manifest file 'course_slam_tools.egg-info/SOURCES.txt'\n"}
+[3.166308] (course_slam_tools) StdoutLine: {'line': b'running build_ext\n'}
+[3.166764] (course_slam_tools) StdoutLine: {'line': b'Creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages/course-slam-tools.egg-link (link to .)\n'}
+[3.167709] (course_slam_tools) StdoutLine: {'line': b'Installing localization_recorder script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools\n'}
+[3.168824] (course_slam_tools) StdoutLine: {'line': b'Installing scan_degrader script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools\n'}
+[3.169351] (course_slam_tools) StdoutLine: {'line': b'\n'}
+[3.169738] (course_slam_tools) StdoutLine: {'line': b'Installed /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools\n'}
+[3.170132] (course_slam_tools) StdoutLine: {'line': b'running symlink_data\n'}
+[3.170260] (course_slam_tools) StdoutLine: {'line': b'creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index\n'}
+[3.170732] (course_slam_tools) StdoutLine: {'line': b'creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index/resource_index\n'}
+[3.171222] (course_slam_tools) StdoutLine: {'line': b'creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index/resource_index/packages\n'}
+[3.171789] (course_slam_tools) StdoutLine: {'line': b'symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/resource/course_slam_tools -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index/resource_index/packages\n'}
+[3.172281] (course_slam_tools) StdoutLine: {'line': b'symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/package.xml -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools\n'}
+[3.172802] (course_slam_tools) StdoutLine: {'line': b'creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools/launch\n'}
+[3.173412] (course_slam_tools) StdoutLine: {'line': b'symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/launch/mapping.launch.py -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools/launch\n'}
+[3.173807] (course_slam_tools) StdoutLine: {'line': b'symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/launch/localization.launch.py -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools/launch\n'}
+[3.218509] (-) TimerEvent: {}
+[3.238403] (course_slam_tools) CommandEnded: {'returncode': 0}
+[3.256813] (course_slam_tools) JobEnded: {'identifier': 'course_slam_tools', 'rc': 0}
+[3.258818] (-) EventReactorShutdown: {}

@@ -1,0 +1,28 @@
+[2.088s] Invoking command in '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools': PYTHONPATH=/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/build --no-deps symlink_data
+[2.657s] running develop
+[3.017s] running egg_info
+[3.018s] creating course_slam_tools.egg-info
+[3.052s] writing course_slam_tools.egg-info/PKG-INFO
+[3.053s] writing dependency_links to course_slam_tools.egg-info/dependency_links.txt
+[3.053s] writing entry points to course_slam_tools.egg-info/entry_points.txt
+[3.053s] writing requirements to course_slam_tools.egg-info/requires.txt
+[3.054s] writing top-level names to course_slam_tools.egg-info/top_level.txt
+[3.055s] writing manifest file 'course_slam_tools.egg-info/SOURCES.txt'
+[3.126s] reading manifest file 'course_slam_tools.egg-info/SOURCES.txt'
+[3.127s] writing manifest file 'course_slam_tools.egg-info/SOURCES.txt'
+[3.164s] running build_ext
+[3.165s] Creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages/course-slam-tools.egg-link (link to .)
+[3.166s] Installing localization_recorder script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools
+[3.167s] Installing scan_degrader script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools
+[3.167s] 
+[3.168s] Installed /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools
+[3.168s] running symlink_data
+[3.168s] creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index
+[3.169s] creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index/resource_index
+[3.169s] creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index/resource_index/packages
+[3.170s] symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/resource/course_slam_tools -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/ament_index/resource_index/packages
+[3.170s] symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/package.xml -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools
+[3.171s] creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools/launch
+[3.171s] symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/launch/mapping.launch.py -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools/launch
+[3.172s] symbolically linking /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/launch/localization.launch.py -> /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/share/course_slam_tools/launch
+[3.237s] Invoked command in '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools' returned '0': PYTHONPATH=/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/build --no-deps symlink_data

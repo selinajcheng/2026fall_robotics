@@ -1,0 +1,18 @@
+[1.284s] Invoking command in '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools': PYTHONPATH=/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/build --no-deps symlink_data
+[1.622s] running develop
+[1.825s] running egg_info
+[1.845s] writing course_slam_tools.egg-info/PKG-INFO
+[1.845s] writing dependency_links to course_slam_tools.egg-info/dependency_links.txt
+[1.846s] writing entry points to course_slam_tools.egg-info/entry_points.txt
+[1.846s] writing requirements to course_slam_tools.egg-info/requires.txt
+[1.846s] writing top-level names to course_slam_tools.egg-info/top_level.txt
+[1.888s] reading manifest file 'course_slam_tools.egg-info/SOURCES.txt'
+[1.890s] writing manifest file 'course_slam_tools.egg-info/SOURCES.txt'
+[1.910s] running build_ext
+[1.910s] Creating /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages/course-slam-tools.egg-link (link to .)
+[1.911s] Installing localization_recorder script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools
+[1.912s] Installing scan_degrader script to /workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/course_slam_tools
+[1.912s] 
+[1.912s] Installed /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools
+[1.912s] running symlink_data
+[1.953s] Invoked command in '/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools' returned '0': PYTHONPATH=/workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/week06_slam_localization/ros2_ws/install/course_slam_tools/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspace/week06_slam_localization/ros2_ws/build/course_slam_tools/build --no-deps symlink_data

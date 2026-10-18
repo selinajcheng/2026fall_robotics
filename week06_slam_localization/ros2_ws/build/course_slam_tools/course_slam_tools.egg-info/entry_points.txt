@@ -1,0 +1,3 @@
+[console_scripts]
+localization_recorder = course_slam_tools.localization_recorder:main
+scan_degrader = course_slam_tools.scan_degrader:main

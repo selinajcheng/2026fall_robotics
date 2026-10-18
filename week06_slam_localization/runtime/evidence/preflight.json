@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "run_id": "d056be9dc55040da92d2ca34c50477a3",
+  "captured_at": "2026-10-18T02:52:23.586022+00:00",
+  "checks": [
+    {
+      "check": "ROS distribution",
+      "passed": true,
+      "detail": "jazzy"
+    },
+    {
+      "check": "ros2 command",
+      "passed": true,
+      "detail": "/opt/ros/jazzy/bin/ros2"
+    },
+    {
+      "check": "ROS_DOMAIN_ID",
+      "passed": true,
+      "detail": "26 (expected 26 for course launcher)"
+    },
+    {
+      "check": "RViz command",
+      "passed": true,
+      "detail": "/opt/ros/jazzy/bin/rviz2"
+    },
+    {
+      "check": "Package: turtlebot3_gazebo",
+      "passed": true,
+      "detail": "turtlebot3_gazebo"
+    },
+    {
+      "check": "Package: turtlebot3_teleop",
+      "passed": true,
+      "detail": "turtlebot3_teleop"
+    },
+    {
+      "check": "Package: slam_toolbox",
+      "passed": true,
+      "detail": "slam_toolbox"
+    },
+    {
+      "check": "Package: nav2_map_server",
+      "passed": true,
+      "detail": "nav2_map_server"
+    },
+    {
+      "check": "Package: course_slam_tools",
+      "passed": true,
+      "detail": "course_slam_tools"
+    }
+  ],
+  "ready": true
+}
